@@ -1,14 +1,17 @@
-import React from 'react'
-
+import Image from 'next/image';
+import blogpic from '../public/image/img1.jpg'
 export default function card() {
   return (
     <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
   <div className="flex flex-col xl:flex-row shadow hover:shadow-md w-full bg-white rounded-lg overflow-hidden cursor-pointer">
-	<img
+	<Image
 		 className="object-cover w-full h-48"
-		 src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80"
+		 src={blogpic}
 		 alt="Flower and sky"
+         priority
+         placeholder="blur"
+         quality={100}
 		 />
 
 	<div className="relative p-4">
@@ -27,10 +30,13 @@ export default function card() {
   </div>
 
   <div className="flex flex-col xl:flex-row shadow hover:shadow-md w-full bg-white rounded-lg overflow-hidden cursor-pointer">
-	<img
+	<Image
 		 className="object-cover w-full h-48"
-		 src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80"
+		 src={blogpic}
 		 alt="Flower and sky"
+         priority
+         placeholder="blur"
+         quality={100}
 		 />
 
 	<div className="relative p-4">
@@ -49,10 +55,13 @@ export default function card() {
   </div>
 
   <div className="flex flex-col xl:flex-row shadow hover:shadow-md w-full bg-white rounded-lg overflow-hidden cursor-pointer">
-	<img
+	<Image
 		 className="object-cover w-full h-48"
-		 src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80"
+		 src={blogpic}
 		 alt="Flower and sky"
+         priority
+         placeholder="blur"
+         quality={100}
 		 />
 
 	<div className="relative p-4">
