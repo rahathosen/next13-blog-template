@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
 
 
 type MenuItemProps = {
@@ -14,7 +14,7 @@ type SubItemProps = {
 
 const Underline = () => (
   <motion.div
-    className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-stone-400 via-neutral-200 to-stone-200"
+    className="absolute bottom-5 left-0 right-0 h-1 bg-gradient-to-r from-stone-400 via-neutral-200 to-stone-400"
     layoutId="underline"
     layout
   ></motion.div>
@@ -23,7 +23,7 @@ const Underline = () => (
 const NiceMenu = () => {
   return (
     <div className="w-screen p-5 font-bold">
-      <motion.div className=" p-5 flex justify-center">
+      <motion.div className=" p-5 flex justify-center ">
         <MenuItem text={"Home"}>
           <SubItem title="Product" text="A SaaS for e-commerce" />
           <SubItem title="Blog" text="Latest posts" />
@@ -73,7 +73,7 @@ const  MenuItem: React.FC<MenuItemProps> =  ({ text, children, ...props }) => {
 
   return (
     <motion.div
-      className="px-10 relative cursor-pointer"
+      className="px-10 relative cursor-pointer z-10"
       onHoverStart={() => setIsBeingHovered(true)}
       onHoverEnd={() => setIsBeingHovered(false)}
     >
@@ -82,7 +82,7 @@ const  MenuItem: React.FC<MenuItemProps> =  ({ text, children, ...props }) => {
         {isBeingHovered && <Underline />}
       </span>
       {isBeingHovered && (
-        <div className="py-5 min-w-max ">
+        <div className="">
           <motion.div
             {...props}
             layoutId="menu"
@@ -118,7 +118,7 @@ const SubItem: React.FC<SubItemProps> = ({ title, text }) => {
       variants={SubItemVariants}
     >
       <div className="flex items-center gap-4">
-        <div className="">
+        <div className="py-2">
           <p className="font-bold text-gray-800 group-hover:text-blue-900 text-md">
             {title}
           </p>
