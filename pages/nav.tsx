@@ -25,28 +25,23 @@ const NiceMenu = () => {
     <div className="w-screen p-5 font-bold">
       <motion.div className=" p-5 flex justify-center ">
         <MenuItem text={"Home"}>
-          <SubItem title="Product" text="A SaaS for e-commerce" />
+          <SubItem title="Product" text="e-commerce" />
           <SubItem title="Blog" text="Latest posts" />
           <SubItem title="Contact" text="Get in touch" />
         </MenuItem>
         <MenuItem text={"Tech"}>
-          <SubItem title="Product" text="A SaaS for e-commerce" />
+          <SubItem title="Product" text="e-commerce" />
           <SubItem title="Blog" text="Latest posts" />
           <SubItem title="Contact" text="Get in touch" />
         </MenuItem>
         <MenuItem text={"Travel"}>
-          <SubItem title="Product" text="A SaaS for e-commerce" />
+          <SubItem title="Product" text="e-commerce" />
           <SubItem title="Blog" text="Latest posts" />
           <SubItem title="Contact" text="Get in touch" />
         </MenuItem>
         <MenuItem text={"About us"} >
           <SubItem title="The Team" text="Get to know us better" />
-          <SubItem title="The Company" text="Since 1998" />
-          <SubItem
-            title="Our Mission"
-            text="Increase the GDP of the internet"
-          />
-          <SubItem title="Investors" text="who's backing us" />
+          <SubItem title="The Company" text="Since 2022" />
         </MenuItem>
        
       </motion.div>
