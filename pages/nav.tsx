@@ -1,14 +1,5 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { Hashicon } from "@emeraldpay/hashicon-react";
-
-const Underline = () => (
-  <motion.div
-    className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-stone-700 via-neutral-500 to-stone-500"
-    layoutId="underline"
-    layout
-  ></motion.div>
-);
 
 
 type MenuItemProps = {
@@ -21,10 +12,17 @@ type SubItemProps = {
     title:string;
 }
 
+const Underline = () => (
+  <motion.div
+    className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-stone-400 via-neutral-200 to-stone-200"
+    layoutId="underline"
+    layout
+  ></motion.div>
+);
 
 const NiceMenu = () => {
   return (
-    <div className="w-screen p-5">
+    <div className="w-screen p-5 font-bold">
       <motion.div className=" p-5 flex justify-center">
         <MenuItem text={"Home"}>
           <SubItem title="Product" text="A SaaS for e-commerce" />
@@ -120,14 +118,13 @@ const SubItem: React.FC<SubItemProps> = ({ title, text }) => {
       variants={SubItemVariants}
     >
       <div className="flex items-center gap-4">
-        {/* <Hashicon value={title} size={25} /> */}
         <div className="">
           <p className="font-bold text-gray-800 group-hover:text-blue-900 text-md">
             {title}
           </p>
-          {/* <span className="font-bold text-gray-400 group-hover:text-blue-400 text-sm">
+          <span className="font-bold text-gray-400 group-hover:text-blue-400 text-sm">
             {text}
-          </span> */}
+          </span>
         </div>
       </div>
     </motion.div>
