@@ -78,9 +78,9 @@ function Nav() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-neutral-100 inline-flex items-center justify-center p-2 
-                rounded-md text-neutral-800 hover:text-neutral-800 hover:bg-neutral-200 
-                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-200
+                className="bg-neutral-50 inline-flex items-center justify-center p-2 
+                rounded-md text-neutral-800 hover:text-neutral-800 hover:bg-neutral-100 
+                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-200
                  focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
