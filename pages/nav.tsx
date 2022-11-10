@@ -28,8 +28,8 @@ function Nav() {
   return (
     <div>
       <nav className="">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+        <div className="">
+          <div className="flex items-center justify-between h-16 ">
             <div className="flex items-center">
               <div className="hidden md:block">
 
@@ -63,7 +63,7 @@ function Nav() {
    {/* large nav*/}
          </div>
             </div>
-            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start md:hidden px-8">
                 <div className="flex-shrink-0 flex items-center">
                   <div
                     className="block lg:hidden h-8 w-auto text-lg font-bold">
@@ -74,12 +74,12 @@ function Nav() {
                     </div>   
                 </div>
                 </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className=" px-8 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-200 inline-flex items-center justify-center p-2 
-                rounded-md text-gray-800 hover:text-neutral-800 hover:bg-gray-300 
+                className="bg-neutral-100 inline-flex items-center justify-center p-2 
+                rounded-md text-neutral-800 hover:text-neutral-800 hover:bg-neutral-200 
                 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-200
                  focus:ring-white"
                 aria-controls="mobile-menu"
@@ -135,7 +135,7 @@ function Nav() {
         >
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div ref={ref} className="mx-8 pt-2 pb-3 space-y-1 text-center bg-neutral-50">
                 <a
                   href="#"
                   className="text-neutral-800 hover:bg-neutral-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
