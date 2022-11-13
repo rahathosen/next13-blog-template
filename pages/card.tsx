@@ -2,14 +2,13 @@ import Image from 'next/image';
 import pic from '../public/image/img1.jpg'
 
 export default function card(data:any) {
+	
   return (
     <>
 	<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
 		
-	{data.posts.map((post:any)=>(	
-		
+{data.posts.map((post:any)=>(	
 	<div key={post.id}>
-
   <div className="flex flex-col xl:flex-row border border-neutral-200 shadow hover:shadow-md w-full bg-white rounded-lg overflow-hidden cursor-pointer">
  {!post.image? 
 	<Image src={pic} alt=''  className="object-cover w-full xl:w-48 h-52 hover:scale-105  transition-all duration-200 ease-in-out"
@@ -52,3 +51,31 @@ export default function card(data:any) {
     </>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

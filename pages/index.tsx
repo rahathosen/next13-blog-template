@@ -15,14 +15,13 @@ const data = await graphQLClient.request(blog_data);
   };
 }
 const Home = ({data}:any)=> {
-// console.log(data);
   return (
    <div>
       <div>
       <Nav />
       </div>
       <div className='p-10'>
-        <Card {...data}/>
+        <Card data={data}/>
         </div> 
         <div>
     </div> 
