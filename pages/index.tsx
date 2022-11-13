@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Nav from './nav'
 import Card from './card'
 import Image from 'next/image'
-import type { GetStaticProps,NextPage } from 'next'
+import type { GetStaticProps } from 'next'
 import graphQLClient  from '../GraphQL/graphQLClient'
 import { blog_data } from '../GraphQL/queris'
 
@@ -14,7 +14,7 @@ const data = await graphQLClient.request(blog_data);
     props:{data}
   };
 }
-const Home:NextPage =({data}:any)=> {
+const Home = ({data}:any)=> {
 // console.log(data);
   return (
    <div>
@@ -22,7 +22,7 @@ const Home:NextPage =({data}:any)=> {
       <Nav />
       </div>
       <div className='p-10'>
-        <Card data={data}/>
+        <Card {...data}/>
         </div> 
         <div>
     </div> 
