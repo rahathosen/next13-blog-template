@@ -3,8 +3,6 @@ import { useState } from "react";
 import { Transition } from "@headlessui/react";
 
 
-
-
 type MenuItemProps = {
     text: string;
     children: JSX.Element|JSX.Element[];
