@@ -4,10 +4,6 @@ import {gql} from 'graphql-request'
  export const blog_data = gql
   `  
   {
-    categories{
-      name
-    }
-
     posts{
       id,
       title
@@ -16,6 +12,7 @@ import {gql} from 'graphql-request'
       created
       published
       updated 
+      slug
     }
   }
   
